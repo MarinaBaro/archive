@@ -1,0 +1,83 @@
+/* Arxiu de treballs Marina Baro, estil css */
+
+    body{
+        font-family: 'Space Mono', monospace;
+        color: black;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+    
+    link,:visited {
+        font-family: 'Space Mono', monospace;
+        font-size: 30px;
+        font-weight: 700;
+        z-index: 100;
+    }
+
+    nav {
+        display: flex;
+        justify-content:space-around;
+    }
+    
+    .second-page{
+        font-family: 'Space Mono', monospace;
+        color: blue;
+        font-size: 30px;
+        font-weight: 700;
+        z-index: 100;
+    }
+
+/* galeria d'imatges que es poden moure tipus montesori */
+
+    .dibuix {
+        cursor: grab;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    figure {
+        /* amplada relativa al tamany del media */
+        width: 25vw;
+        height: auto;
+    }
+
+    .draggable {
+        margin: 0px;
+        padding: 8px;
+    }
+    
+    img{
+        width: inherit;
+        height: inherit;
+    }
+    
+/* text general */
+    
+    li {
+        font-family: 'Space Mono', monospace;
+        color: rgb(25, 6, 61);
+        font-size: 1.5rem;
+        font-weight: 100;
+        list-style: none; 
+    }
+
+    p{
+        padding-left: 2rem;
+        font-family: 'Space Mono', monospace;
+        color: rgb(25, 6, 61);
+        font-size: 1.2rem;
+        font-weight: 100;
+        margin: 1rem;
+        margin-top: 0rem;
+    }
+
+    p.petit {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin-bottom: .5rem;
+    }
+   
+   .bold{
+        font-weight: 700;
+    }
