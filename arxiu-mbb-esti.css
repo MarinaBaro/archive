@@ -62,7 +62,7 @@
     }
 
 /* Pantalla petita mobils  */
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 800px) {
         body {
           background-color: lightblue;
          
@@ -94,7 +94,7 @@
     }
 
     p.petit {
-        padding-left: 2rem;
+        padding-left: 3rem;
         font-size: .9rem;
         line-height: 1rem;
         margin-bottom: .5rem;
