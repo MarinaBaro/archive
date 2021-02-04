@@ -95,7 +95,7 @@
     }
 
     /* Pantalla petita mobils, sempre dalt de tot  */
-@media screen (max-width: 800px) {
+@media screen and (max-width: 800px) {
     body {
       background-color: lightblue;
     }
@@ -106,12 +106,12 @@
         padding: 0px;
     }
 }
-@media screen (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .t-projecte{
         width: 100%;
     }
 }
-@media screen (max-width: 800px) {
+@media screen and (max-width: 800px) {
     figure {
         width: 100%;
     }
