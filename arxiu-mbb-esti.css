@@ -1,7 +1,11 @@
-/* Pantalla petita mobils  */
-@media screen and (max-width: 800px) {
+/* Pantalla petita mobils, sempre dalt de tot  */
+@media screen (max-width: 800px) {
     body {
       background-color: lightblue;
+    }
+    ul{
+        border: 1px;
+        padding: 0px;
     }
     .t-projecte{
         width: 100%;
@@ -14,9 +18,6 @@
 
     body{
         font-family: 'Space Mono', monospace;
-        color: black;
-        /* font-size: 1rem; */
-        font-weight: 200;
     }
     
     a{
