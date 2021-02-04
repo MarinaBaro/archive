@@ -61,6 +61,12 @@
         height: inherit;
     }
     
+/* Pantalla petita mobils  */
+    @media only screen and (max-width: 600px) {
+        body {
+          background-color: lightblue;
+        }
+    
 /* text general */
     
     li {
