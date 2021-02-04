@@ -3,13 +3,19 @@
     body {
       background-color: lightblue;
     }
+}
+@media screen (max-width: 800px) {
     ul{
         border: 1px;
         padding: 0px;
     }
+}
+@media screen (max-width: 800px) {
     .t-projecte{
         width: 100%;
     }
+}
+@media screen (max-width: 800px) {
     figure {
         width: 100%;
     }
