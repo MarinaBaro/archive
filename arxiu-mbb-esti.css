@@ -43,6 +43,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        align-content: flex-start;
     }
 
     figure {
@@ -65,7 +66,9 @@
     @media only screen and (max-width: 800px) {
         body {
           background-color: lightblue;
-         
+        }
+        .t-projecte{
+            width: 1fr;
         }
         figure {
             width: 1fr;
