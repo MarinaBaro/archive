@@ -68,11 +68,10 @@
           background-color: lightblue;
         }
         .t-projecte{
-            width: 1fr;
+            width: 100%;
         }
         figure {
-            width: 1fr;
-            height: auto;
+            width: 100%;
         }
     }
     
