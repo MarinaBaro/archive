@@ -29,6 +29,15 @@
 
 /* galeria d'imatges que es poden moure tipus montesori */
 
+    .t-projecte{
+        width: 25vw;
+        height: auto;
+        font-family: 'Space Mono', monospace;
+        color: rgb(25, 6, 61);
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+
     .dibuix {
         cursor: grab;
         display: flex;
@@ -73,7 +82,8 @@
     }
 
     p.petit {
-        font-size: 1.05rem;
+        padding-left: 2rem;
+        font-size: .9rem;
         line-height: 1rem;
         margin-bottom: .5rem;
     }
