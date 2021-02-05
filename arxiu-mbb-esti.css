@@ -95,7 +95,7 @@
     }
 
     /* Pantalla petita mobils, sempre dalt de tot  */
-@media screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
     body {
       background-color: lightblue;
     }
