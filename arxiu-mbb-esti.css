@@ -9,6 +9,9 @@
         display: flex;
         justify-content:space-around;
     }
+    div.event{
+        margin-top: 1rem;
+    }
 
 /* text general */
     
@@ -124,7 +127,7 @@
 }
 @media screen and (max-width: 300px) {
     time{
-        font-size: 0.5rem;
+        font-size: 0.8rem;
         padding: 0px;
 
     }
@@ -133,7 +136,7 @@
         padding: 0px;
     }
 
-    li{
+    li.petit{
         display: none;
     }
 
