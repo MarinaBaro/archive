@@ -100,14 +100,17 @@
         border: 1px;
         padding: 0px;
     }
-}
-@media screen and (max-width: 800px) {
     .t-projecte{
         width: 100%;
     }
-}
-@media screen and (max-width: 800px) {
     figure {
         width: 100%;
+    }
+}
+  /* Pantalla molt gran, tielevisions, grans monitors  */
+  @media screen and (min-width: 1200px) {
+    body{
+        display:flex;
+        justify-content: center;
     }
 }
