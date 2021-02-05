@@ -4,26 +4,63 @@
     body{
         font-family: 'Space Mono', monospace;
     }
-    
-    a{
-        
-        font-size: 30px;
-        font-weight: 700;
-        z-index: 100;
-    }
 
     nav{
         display: flex;
         justify-content:space-around;
     }
+
+/* text general */
     
-    .second-page{
-  
-        color: blue;
+    h1{
         font-size: 30px;
         font-weight: 700;
-        z-index: 100;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
     }
+
+    time {
+        font-size: 1.2rem;
+        line-height: auto;
+        font-weight: 100;
+        list-style: none; 
+        margin: 0px;
+        padding: 0px;
+        padding-left: 1rem; 
+    }
+
+    h2{
+        font-size: 1.2rem;
+        line-height: auto;
+        font-weight: 100;
+        list-style: none; 
+        margin: 0px;
+        padding: 0px;
+        padding-left: 2rem;  
+    }
+
+    li {
+        font-size: .9rem;
+        line-height: auto;
+        font-weight: 100;
+        list-style: none; 
+        margin: 0px;
+        padding: 0px;
+        padding-left: 3rem;
+    }
+   
+   .bold{
+        font-weight: 700;
+    }
+
+/* interaccio links */
+   
+    a:hover{
+        text-decoration: underline;
+    }
+
+
 
 /* galeria d'imatges que es poden moure tipus montesori */
 
@@ -60,40 +97,7 @@
     }
 
 
-    
-/* text general */
-    
-    li {
-        color: rgb(25, 6, 61);
-        font-size: 1.2rem;
-        font-weight: 100;
-        list-style: none; 
-    }
-
-    h2{
-        padding-left: 2rem;
-        color: rgb(25, 6, 61);
-        font-size: 1.2rem;
-        font-weight: 100;
-        margin: 1rem;
-        margin-top: 0rem;
-    }
-
-    p.petit {
-        padding-left: 3rem;
-        font-size: .9rem;
-        line-height: 1rem;
-        margin-bottom: .5rem;
-    }
-   
-   .bold{
-        font-weight: 700;
-    }
-
-    a:hover{
-        text-decoration: underline;
-    }
-
+  
     /* Pantalla petita mobils, sempre dalt de tot  */
 @media screen and (max-width: 800px) {
     ul{
@@ -108,7 +112,7 @@
     }
 }
   /* Pantalla molt gran, tielevisions, grans monitors  */
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 2000px) {
     body{
         display:flex;
         justify-content: center;
