@@ -89,8 +89,8 @@
 
     figure {
         /* amplada relativa al tamany del media */
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
     }
 
     .draggable {
