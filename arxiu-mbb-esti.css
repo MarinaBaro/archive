@@ -89,7 +89,7 @@
 
     figure {
         /* amplada relativa al tamany del media */
-        width: 25vw;
+        width: 100%;
         height: auto;
     }
 
