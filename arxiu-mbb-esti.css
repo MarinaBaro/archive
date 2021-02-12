@@ -62,9 +62,28 @@
     }
 
 /* interaccio links */
-   
-    a:hover{
+
+    a:link{
+        color: black;
         text-decoration: underline;
+        text-decoration-color: black;
+    }
+    a:visited{
+        color: black;
+        text-decoration: underline;
+        text-decoration-color: rgb(221, 196, 85);
+
+    }
+    a:hover{
+        color:rgb(221, 196, 85);
+        text-decoration: underline;
+        text-decoration-color: rgb(221, 196, 85);
+
+    }
+    a:active{
+        color: rgb(184, 154, 21);
+        text-decoration: underline;
+        text-decoration-color: rgb(184, 154, 21);
     }
 
 
