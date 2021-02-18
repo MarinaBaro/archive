@@ -1,4 +1,3 @@
-
 /* Arxiu de treballs Marina Baro, estil css */
 
     body{
@@ -13,6 +12,10 @@
         margin-top: 1rem;
     }
 
+ /* color de elements  */
+    body{
+        color:#111E6C;
+    }
 /* text general */
     
     h1{
@@ -124,7 +127,7 @@
 
 
   
-    /* Pantalla petita mobils, sempre dalt de tot  */
+    /* Pantalla petita mobils, sempre dalt de tot, sense padding esquerra  */
 @media screen and (max-width: 800px) {
     time{
         padding: 0px;
@@ -167,7 +170,7 @@
     }
 }
   /* Pantalla molt gran, tielevisions, grans monitors  */
-  @media screen and (min-width: 2000px) {
+  @media screen and (min-width: 1200px) {
     body{
         display:flex;
         flex-direction: column;
