@@ -112,7 +112,7 @@
     figure {
         /* amplada relativa al tamany del media */
         width: auto;
-        height: 100%;
+        height: auto;
     }
 
     .draggable {
