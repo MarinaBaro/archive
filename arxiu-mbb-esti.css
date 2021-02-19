@@ -218,23 +218,23 @@
     nav{
         width: 100%;
     }
+
+
+    }
+}
+
+
+body{
+    display: flex;
+    flex-direction: row;
+}
 /* cv esquerra */
 .cv{
-
+    width: 50%;
+    background-color: blanchedalmond;
 }
-/* galeria d'imatges esquerra */
-    body{
-        display: flex;
-        flex-direction: row;
-    }
-    .cv{
-        width: 50%;
-      
-        background-color: blanchedalmond;
-    }
-    .gallery{
-        width: 50%;
-        height: 100%;
-        background-color: yellow;
-    }
-}
+/* galeria d'imatges dreta */
+.gallery{
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
