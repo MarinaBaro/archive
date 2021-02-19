@@ -227,10 +227,11 @@
 body{
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 }
 /* cv esquerra */
 .cv{
-    width: 50%;
+    width: 49%;
     background-color: blanchedalmond;
 }
 /* galeria d'imatges dreta */
