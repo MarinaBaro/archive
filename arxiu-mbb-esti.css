@@ -209,7 +209,7 @@
     }
 }
   /* Pantalla molt gran, tielevisions, grans monitors  */
-  @media screen and (min-width: 1200px) {
+  @media screen and (max-width: 1200px) {
     body{
         display:flex;
         flex-direction: column;
@@ -217,5 +217,12 @@
     }
     nav{
         width: 100%;
+    }
+/* galeria d'imatges esquerra */
+    .gallery{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        background-color: yellow;
     }
 }
