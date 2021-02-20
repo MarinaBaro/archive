@@ -105,14 +105,6 @@
 
 /* galeria d'imatges que es poden moure tipus montesori */
 
-    .t-projecte{
-        width: 25vw;
-        height: auto;
-        color: rgb(25, 6, 61);
-        font-size: 1.2rem;
-        font-weight: 100;
-    }
-
     .dibuix {
         display: flex;
         justify-content: center;
@@ -203,17 +195,6 @@
         width: 100%;
     }
 }
-  /* Pantalla molt gran, tielevisions, grans monitors  */
-  @media screen and (max-width: 1200px) {
-    body{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    nav{
-        width: 100%;
-    }
-    }
 
 
 
@@ -231,6 +212,7 @@ body{
 .gallery{
     background-color: yellow;
     overflow: hidden;
+    max-width: 90%;
 }
 
 
