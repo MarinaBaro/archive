@@ -123,8 +123,8 @@
 
     figure {
         /* amplada relativa al tamany del media */
-        max-width: 100%;
-        max-height: 90%;
+        max-width: 45%;
+        max-height: auto;
     }
 
     .draggable {
@@ -244,7 +244,8 @@ body{
 }
 
 .draggable{
-    max-height: 90%;
+    max-height: 20%;
+    max-width: auto;
     overflow: hidden;
 }
 button{
