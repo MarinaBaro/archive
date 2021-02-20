@@ -146,15 +146,38 @@
             </ul>
         </div>
     </div>
-    <div class="gallery">
-        <div class="dibuix">    
-        <!-- Projecte 1 Peca ceràmica per coberta -->
-        <div class="t-projecte">Sistema de coberta metàlica amb teula ceràmica</div>
-        <figure class="draggable"><img src="https://marinabaro.github.io/archive/img/3.1.png" alt="Axonomètrica evolució, Sistema de coberta metàlica amb teula ceràmica"></figure>
-        <figure class="draggable"><img src="https://marinabaro.github.io/archive/img/3.2.gif" alt="Fotografía, maqueta, escala 1:2, Sistema de coberta metàlica amb teula ceràmica"></figure>
-        <figure class="draggable"><img src="https://marinabaro.github.io/archive/img/3.3.jpg" alt="Fotografía, maqueta, escala 1:2, Sistema de coberta metàlica amb teula ceràmica"></figure>
+   
+
+          
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <div class="gallery">
+            <button type="button" class="close" on>x</button>
+            <div class="dibuix">    
+                <!-- Projecte 1 Peca ceràmica per coberta -->
+                <div class="t-projecte">Sistema de coberta metàlica amb teula ceràmica</div>
+                <figure class="draggable"><img src="https://marinabaro.github.io/archive/img/3.1.png" alt="Axonomètrica evolució, Sistema de coberta metàlica amb teula ceràmica"></figure>
+                <figure class="draggable"><img src="https://marinabaro.github.io/archive/img/3.2.gif" alt="Fotografía, maqueta, escala 1:2, Sistema de coberta metàlica amb teula ceràmica"></figure>
+                <figure class="draggable"><img src="https://marinabaro.github.io/archive/img/3.3.jpg" alt="Fotografía, maqueta, escala 1:2, Sistema de coberta metàlica amb teula ceràmica"></figure>
+            </div>    
         </div>
-    </div>
+       
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+
+
 </body>
 
 </html>
