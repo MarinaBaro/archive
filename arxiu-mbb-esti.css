@@ -114,7 +114,6 @@
     }
 
     .dibuix {
-        cursor: grab;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -234,7 +233,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     background-color: yellow;
     overflow: hidden;
 }
