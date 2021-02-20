@@ -221,7 +221,6 @@ body{
     margin: 0;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
 }
 /* cv esquerra */
 .cv{
@@ -230,10 +229,6 @@ body{
 }
 /* galeria d'imatges dreta */
 .gallery{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 100%;
     background-color: yellow;
     overflow: hidden;
 }
