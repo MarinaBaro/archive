@@ -123,15 +123,11 @@
 
     figure {
         /* amplada relativa al tamany del media */
-        max-width: 45%;
-        max-height: auto;
-    }
-
-    .draggable {
+        max-width: 90%;
         margin: 0px;
         padding: 8px;
     }
-    
+
     img{
         width: inherit;
         height: inherit;
@@ -243,11 +239,7 @@ body{
     overflow: hidden;
 }
 
-.draggable{
-    max-height: 20%;
-    max-width: auto;
-    overflow: hidden;
-}
+
 button{
     height: 20px;
     width: 50%;
@@ -294,8 +286,8 @@ button{
   .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 50%;
-    margin-right: 50px;
+    right: 0;
+    margin-right: 20px;
   }
   .image{
       color: #121212;
