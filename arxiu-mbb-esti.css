@@ -239,6 +239,7 @@ body{
     top: 0;
     right: 0;
     margin-right: 20px;
+    z-index: 3;
   }
    
   @media screen and (max-height: 450px) {
@@ -263,8 +264,10 @@ img{
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
-  position: relative;
-  margin: auto;
+  margin-top: 50%;
+  margin-bottom: 50%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /* Next & previous buttons */
