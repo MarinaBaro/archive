@@ -214,6 +214,7 @@ body{
 /* ////////  <!-- Foloded lateral -->////////// */
 .sidenav {
     z-index: 1;
+    position: relative;
     top: 0;
     right: 0;
     background-color: rgb(238, 255, 0);
@@ -263,11 +264,10 @@ img{
 
 /* Slideshow container */
 .slideshow-container {
+  position: absolute;
   max-width: 1000px;
   margin-top: 50%;
   margin-bottom: 50%;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 /* Next & previous buttons */
