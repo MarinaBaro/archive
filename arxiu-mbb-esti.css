@@ -165,7 +165,6 @@ body{
 
     /* A div that covers the entire page */
     .container{
-      background-color:#F26627;
       width: 50%;
       overflow: hidden;
       height: 100vh;
