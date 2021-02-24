@@ -168,12 +168,13 @@ body{
       background-color:#F26627;
       width: 50%;
       overflow: hidden;
-  }
-  .text{
+      height: 100vh;
+    }
+    .text{
       color:#325D79;
       font-family: 'Space Mono', monospace;
       font-size: x-large;
-  }
+    }
   /* Slide Counter */
   .counter{
       float: left;
