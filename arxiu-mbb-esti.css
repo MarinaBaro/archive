@@ -171,6 +171,7 @@ body{
     }
     .text{
       font-size: xx-large;
+      text-decoration: none;
     }
   /* Slide Counter */
   .counter{
@@ -226,4 +227,5 @@ body{
       display: flex;
       justify-content: space-between;
       align-items: center; 
+      font-size: xx-large;
   }
