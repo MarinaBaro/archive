@@ -171,14 +171,11 @@ body{
       height: 100vh;
     }
     .text{
-      color:#325D79;
-      font-family: 'Space Mono', monospace;
-      font-size: x-large;
+      font-size: xx-large;
     }
   /* Slide Counter */
   .counter{
       float: left;
-      color: #F9A26C ;
       z-index: 2;
   }
   /* Nav Close button */
@@ -196,8 +193,6 @@ body{
   /* Slides system */
   .slides{
       max-width: 1000px;
-      background-color: #9BD7D1;
-    
       display: none;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 100px;
@@ -205,7 +200,6 @@ body{
   }
   /* with a grid */
   .content{
-      background-color: #9BD7D1;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
@@ -230,9 +224,6 @@ body{
   }
   /* Slide buttons arrow shaped */
   .arrow{
-      color: #F9A26C ;   
-      z-index: 4;
-      background-color: #9BD7D1;
       display: flex;
       justify-content: space-between;
       align-items: center; 
