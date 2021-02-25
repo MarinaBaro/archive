@@ -148,7 +148,7 @@
     </div>
    
     <div id="nav" class="container">
-        <div class="text counter counter-display">(..)/3</div>
+        <div class="text counter slideshow-counter">(..)/3</div>
         <a href="javascript:void(0)" class="text closebtn" onclick="closeNav()">&#10006;</a>
         <div class="containerflex">
             <a class="arrow previous counter-minus" onclick="plusSlides(-1)">&#x1F860;</a>
@@ -220,27 +220,16 @@
 
         // script 3:counter
 
-        let counterDisplayElem = document.querySelector('.counter-display');
-        let counterMinusElem = document.querySelector('.counter-minus');
-        let counterPlusElem = document.querySelector('.counter-plus');
+        function updateCounter() {
+        $('#slideshow-counter').html(currentSlide + "/" + totalSlides);
+        }
 
-        let count = 0;
-
-        updateDisplay();
-
-        counterPlusElem.addEventListener("click",()=>{
-            count++;
-            updateDisplay();
-        }) ;
-
-        counterMinusElem.addEventListener("click",()=>{
-            count--;
-            updateDisplay();
-        });
-
-        function updateDisplay(){
-            counterDisplayElem.innerHTML = count;
-        };
+        function showFirstSlide() {
+            currentSlide = 1;
+            updateContentHolder();
+            updateButtons();
+            updateCounter();
+        }
 
 </script>
 
