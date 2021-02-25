@@ -191,12 +191,15 @@ body{
       align-items: stretch;
       min-height: 100%;
   }
+  .height{
+      min-height: none;
+  }
   /* Slides system */
   .slides{
       max-width: 1000px;
       display: none;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 100px;
+      grid-template-rows: 1fr 50px;
       justify-items: stretch;
   }
   /* with a grid */
