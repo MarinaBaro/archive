@@ -148,10 +148,10 @@
     </div>
    
     <div id="nav" class="container">
-        <div class="text counter">3</div>
+        <div class="text counter counter-display">(..)/3</div>
         <a href="javascript:void(0)" class="text closebtn" onclick="closeNav()">&#10006;</a>
         <div class="containerflex">
-            <a class="arrow previous" onclick="plusSlides(-1)">&#x1F860;</a>
+            <a class="arrow previous counter-minus" onclick="plusSlides(-1)">&#x1F860;</a>
             <div class="slides slidesbox">
                 <div class="content">
                     <img src="https://marinabaro.github.io/archive/img/3.1.png" class="reduceimg">
@@ -170,9 +170,12 @@
                 </div>
                 <div class="text description">Aixó és una descripció de la imatge 3 que hi ha a sobre</div>
             </div>
-            <a class="arrow next" onclick="plusSlides(1)">&#x1F862;</a>
+            <a class="arrow next counter-plus" onclick="plusSlides(1)">&#x1F862;</a>
         </div> 
     </div>   
+
+ 
+
 
   
 </body>
@@ -214,6 +217,31 @@
             slides[slideIndex-1].style.display = "grid";  
             dots[slideIndex-1].className += " active";
         }
+
+        // script 3:counter
+
+        let counterDisplayElem = document.querySelector('.counter-display');
+        let counterMinusElem = document.querySelector('.counter-minus');
+        let counterPlusElem = document.querySelector('.counter-plus');
+
+        let count = 0;
+
+        updateDisplay();
+
+        counterPlusElem.addEventListener("click",()=>{
+            count++;
+            updateDisplay();
+        }) ;
+
+        counterMinusElem.addEventListener("click",()=>{
+            count--;
+            updateDisplay();
+        });
+
+        function updateDisplay(){
+            counterDisplayElem.innerHTML = count;
+        };
+
 </script>
 
 </html>
