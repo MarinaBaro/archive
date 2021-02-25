@@ -168,6 +168,11 @@ body{
       width: 50%;
       overflow: hidden;
       height: 100vh;
+      /* Set "my-sec-counter" to 0 */
+      counter-reset: my-sec-counter;
+      
+      
+      
     }
     .text{
       font-size: xx-large;
@@ -178,6 +183,12 @@ body{
       float: left;
       z-index: 2;
   }
+  .counter::before {
+    /* Increment "my-sec-counter" by 1 */
+    counter-increment: my-sec-counter;
+    content: counter(my-sec-counter) "/ ";
+  }
+
   /* Nav Close button */
   .closebtn{
       float: right;
@@ -219,7 +230,7 @@ body{
   /* Slide Description */
   .description{
       max-height: 30px;
-      font-size: small;
+      font-size: .9rem;
       text-align: center;
   }
   /* Slide buttons arrow shaped */
@@ -227,5 +238,5 @@ body{
       display: flex;
       justify-content: space-between;
       align-items: center; 
-      font-size: xx-large;
+      
   }
