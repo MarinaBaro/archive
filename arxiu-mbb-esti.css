@@ -164,7 +164,7 @@ body{
 
 
     /* A div that covers the entire page */
-    .container1 .container2 .container3{
+    .container1.container2.container3{
       width: 50%;
       overflow: hidden;
       height: 100vh;
