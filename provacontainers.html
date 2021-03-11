@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>prova carcassa</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Marina Baro - Arxiu</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        body{
+            font-family: 'Space Mono', monospace;
+            color: #111E6C;
+            display: flex;
+            flex-direction: row;
+            flex-flow: space-between;
+            align-items: flex-end;
+        }
+        /* font size */
+        h2{
+        font-size: 1.2rem;
+        line-height: auto;
+        font-weight: 100;
+        margin: 0px;
+        padding: 0px;
+        padding-left: 2rem;  
+        }
+        ul{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        li {
+            font-size: .9rem;
+            line-height: auto;
+            font-weight: 100;
+            margin: 0px;
+            padding: 0px;
+            padding-left: 3rem;
+        }
+    
+        .bold{
+            font-weight: 700;
+        }
+        .vertical{
+            writing-mode: vertical-rl;
+        }
+        /* button */
+        button{
+            border: none;
+            border-radius: 50%;
+            display: inline-block;
+            padding: 5px 16px 10px 16px;
+            overflow: hidden;
+            
+            background-color: #4e8d7c;
+           
+            cursor: pointer;
+            white-space: nowrap;
+            font-size: 25px;
+            line-height: 1.5;
+        }
+        button:hover{
+            background-color: #045762;
+        }
+        #containermenu{
+            background-color: #4e8d7c;;
+            height: 98vh;
+            width: 2%;
+            display: flex;
+            flex-direction: row;
+            overflow: scroll;
+        }
+        #container1{
+            background-color:#f3f2da;
+            height: 98vh;
+            width: 90%;
+            overflow: scroll;
+        }
+        #container2{
+            background-color:#4e8d7c;
+            height: 98vh;
+            width: 100%;
+            display: none;
+            flex-direction: column;
+        }
+        #container3{
+            background-color:#045762;
+            height: 98vh;
+            width: 100%;
+            display: none;
+            flex-direction: column;
+        }
+        #container4{
+            background-color:#e6acbb;
+            height: 98vh;
+            width: 100%;
+            display: none;
+            flex-direction: column;
+        }
+        .containertop{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;  
+        }
+        .counter{
+            padding: 1rem;
+            margin: 1.5rem;
+            font-size: large;
+        }
+        .closebtn{
+            padding: 1rem;
+            margin: 1.5rem;
+            font-size: xx-large;
+            text-decoration: none;
+        }
+        .containerfigure{
+            display: flex;
+            flex-direction: row; 
+            align-items: center;
+            text-align: center;
+            height: 98vh;
+        }
+        .arrow{
+            padding: 1rem;
+            margin: 1.5rem;
+            font-size: xx-large;
+            padding-top: 50%;
+            padding-bottom: 50%;
+        }
+        .containerimage{
+            display: none;
+            flex-direction: column; 
+            align-items: center;
+        }
+        .containerimage2{
+            display: none;
+            flex-direction: column; 
+            align-items: center;
+        }
+        .containerimage3{
+            display: none;
+            flex-direction: column; 
+            align-items: center;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+            
+        }
+        .description{
+          height: 5rem;
+          padding: auto;
+        }
+
+    </style>
+    <body>
+        <script>
+            
+            //script 1
+            /* WHEN page loaded ALL CONTAINERS Display none */
+            window.onload = function CloseAll(){
+            document.getElementById("container2").style.display = "none";
+            document.getElementById("container3").style.display = "none";
+            document.getElementById("container4").style.display = "none";
+            }
+             
+            //script2
+            // Container2
+            /* Display flex */
+            function openCont2() {
+            document.getElementById("container2").style.display = "flex";
+            }
+            /* Display none */
+            function closeCont2() {
+            document.getElementById("container2").style.display = "none";
+            } 
+
+            // Container3
+             /* Display flex */
+            function openCont3() {
+            document.getElementById("container3").style.display = "flex";
+            }
+            /* Display none */
+            function closeCont3() {
+            document.getElementById("container3").style.display = "none";
+            } 
+
+            // Container4  
+            /* Display flex */
+            function openCont4() {
+            document.getElementById("container4").style.display = "flex";
+            }
+            /* Display none */
+            function closeCont4() {
+            document.getElementById("container4").style.display = "none";
+            } 
+
+        </script>
+            <div class="containermenu">
+                <ul>
+                    <li class="petit vertical"><a href="/cv">------------cv</a></li>
+                    <br>
+                    <li class="petit vertical"><a href="/skills">--------skills</a></li>
+                    <br>
+                    <li class="petit vertical"><a href="/contacte">--------contacte</a></li>
+                </ul>
+            </div>
+            <div id='container1.1'>
+            <div class="event">
+                <time>2018-2020</time>
+                <h2><b class="bold">Arquitecta</b> a l'enginyeria Xavier Riveiro, Reus</h2>
+                <ul>
+                    <li class="petit">Disseny i redacció de projectes d'instal·lacions</li>
+                    <li class="petit">Redacció de projectes d'obra</li>
+                    <li class="petit">Gestió d'obra</li>
+                    <li class="petit">Certificacions energètiques per grans terciaris segons el nou CTE 2019 mitjançant CYPE CAD MEP</li>
+                    <li class="petit">Redaccio de llicències d'activitat, ambientals, etc.</li>
+                    <li class="petit">Mesuraments i pressupostos</li>
+                    <li class="petit">Control de pressupostos d'obra</li>
+                    <li class="petit">Certificacions bancàries</li>
+                    <li class="petit">Gestió de correu electrònic</li>
+                </ul>
+            </div>
+                
+            <div class="event">
+                <time>2018</time>
+                <h2><b class="bold">Consultora d'Accessibilitat</b> a l'estudi de l'arquitecte Enrique Rovira Beleta, Barcelona</h2>
+                <ul>
+                    <li class="petit">Disseny i redacció de plans preliminars d'accessibilitat per següents equipaments culturals:</li>
+                    <li class="petit">Teatre Fortuny de Reus</li>
+                    <li class="petit">Teatre Metropol de Tarragona</li>
+                    <li class="petit">Teatre auditori Felip Pedrell de Tortosa</li>
+                </ul>
+            </div>
+    
+            <div class="event">
+                <time>2016-2017</time>
+                <h2><b class="bold">Arquitecta</b> a l'Ajuntament de Reus</h2>
+                <ul>
+                    <li class="petit">Revisió i digitalització del Pla especial de patrimoni histricoartístic de Reus.</li>
+                    <li class="petit">Maquetació de les futures fitxes estandaritzades del catàleg</li>
+                    <li class="petit"> Digitalització de tota la informació en paper</li>
+                    <li class="petit">Creació base de dades interactiva</li>
+                    <li class="petit">Actualització de l'estat de part del catàleg</li>
+                </ul>
+            </div>  
+                    
+            <div class="event">
+                <time>2016</time>
+                <h2><b class="bold">Grau habilitant</b> en Arquitectura, UIC.BCN<button onclick="openCont2()">+</button></h2>
+                <ul>
+                    <li class="petit"> Treball final de grau dirigit per Rosa Rull i Yolanda Olmos</li>
+                </ul>
+            </div>    
+            
+            <div class="event">
+                <time>2014-2016</time>
+                <h2><b class="bold">Becària</b> del Postgrau en Accessibilitat i disseny per a tots</h2>
+                <ul>
+                    <li class="petit">Postgrau d'Accessibilitat dirigit per Enrique Rovira Beleta i gestionat per Ana Folch</li>
+                </ul>
+            </div>
+            
+            <div class="event">
+                <time>2014</time>
+                <h2><b class="bold">Premi</b> Càtedra ceràmica, UIC.BCN<button onclick="openCont3()">+</button></h2>
+                <ul>
+                    <li  class="petit"> Per el disseny d'un sistema de coberta. </li>
+                    <li  class="petit">Professors de l'assignatura: Vicens Sarrablo, Jordi Roviras, Cristina G. Castelao</li>
+                    <li  class="petit">Jurat: Emiliano López, Xavi Ros, Rosa Urbano, Eva Pedrajas</li>
+                </ul>
+            </div>
+                    
+            <div class="event">
+                <time>2015</time>
+                <h2><b class="bold">Matrícula d'honor</b> a l'optativa de disseny d'objectes.<button onclick="openCont4()">+</button></h2>
+                <ul>
+                    <li  class="petit">Per el disseny d'una llar de foc.</li>
+                    <li  class="petit">Professors de l'assignatura Aitor Fuentes i Igor Urdampilleta</li>
+                </ul>
+            </div>
+    
+            <div class="event">
+                <time>2013-Agost</time>
+                <h2><b class="bold">Becària</b> a l'estudi Flores i Prats</h2>
+                <ul>
+                    <li  class="petit">Ajudant a la realització d'una exposició a Copenhague al despatx Flores
+                        i Prats arquitectes</li>
+                </ul>
+            </div>
+    
+            <div class="event">
+                <time>2012-2013</time>
+                <h2><b class="bold">Becària</b> de publicacions ESARQ</h2>
+                <ul>
+                    <li  class="petit">Gestió de la web informativa de l'escola d'arquitectura sota la supervisió de l'arquitecta Marta Poch.</li>
+                </ul>
+            </div>    
+           
+     
+            
+        </div>
+        <div id='container2'>
+            <div class="containertop">
+                <div class="counter" id="counter1"></div>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeCont2()">&#xd7;</a>
+            </div>
+            <div class="containerfigure">
+                <div class="arrow previous counter-minus" onclick="plusSlides(-1)">&#x3c;</div>
+                <div class="containerimage slides slides1">
+                    <img src="https://marinabaro.github.io/archive/img/1.1.jpg">
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="containerimage slides slides1">
+                    <img src="https://marinabaro.github.io/archive/img/1.2.gif">
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="containerimage slides slides1">
+                    <img src="https://marinabaro.github.io/archive/img/1.3.jpg">
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="containerimage slides slides1">
+                    <img src="https://marinabaro.github.io/archive/img/1.4.jpg">
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="containerimage slides slides1">
+                    <img src="https://marinabaro.github.io/archive/img/1.5.jpg">
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="containerimage slides slides1">
+                    <img src="https://marinabaro.github.io/archive/img/1.6.jpg" >
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="containerimage slides slides1">
+                    <img src="https://marinabaro.github.io/archive/img/1.7.jpg">
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="containerimage slides slides1">
+                    <img src="https://marinabaro.github.io/archive/img/1.9.gif">
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="containerimage slides slides1">
+                    <img src="https://marinabaro.github.io/archive/img/1.10.jpg">
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="containerimage slides slides1">
+                    <img src="https://marinabaro.github.io/archive/img/1.11.jpg">
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="containerimage slides slides1">
+                    <img src="https://marinabaro.github.io/archive/img/1.12.jpg">
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="containerimage slides slides1">
+                    <img src="https://marinabaro.github.io/archive/img/1.13.jpg">
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="arrow next counter-plus" onclick="plusSlides(1)">&#x3e;</div>
+            </div>
+        </div>
+
+        <div id='container3'>
+            <div class="containertop">
+                <div class="counter" id="counter2"></div>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeCont3()">&times;</a>
+            </div>
+            <div class="containerfigure">
+                <div class="arrow previous counter-minus" onclick="plusSlides(-1)">&#x3c;</div>
+                <div class="containerimage2 slides slides2">
+                    <img src=https://marinabaro.github.io/archive/img/2.1.gif>
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="containerimage2 slides slides2">
+                    <img src="https://marinabaro.github.io/archive/img/2.2.jpg">
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="containerimage2 slides slides2">
+                    <img src="https://marinabaro.github.io/archive/img/2.3.jpg">
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="containerimage2 slides slides2">
+                    <img src="https://marinabaro.github.io/archive/img/2.4.jpg">
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="arrow next counter-plus" onclick="plusSlides(1)">&#x3e;</div>
+            </div>
+        </div>
+
+        <div id='container4'>  
+            <div class="containertop">
+                <div class="counter" id="counter3"></div>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeCont4()">&times;</a>
+            </div>
+            <div class="containerfigure">
+                <div class="arrow previous counter-minus" onclick="plusSlides(-1)">&#x3c;</div>
+                <div class="containerimage3 slides slides3">
+                    <img src="https://marinabaro.github.io/archive/img/3.1.png">
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="containerimage3 slides slides3">
+                    <img src="https://marinabaro.github.io/archive/img/3.2.gif">
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="containerimage3 slides slides3">
+                    <img src="https://marinabaro.github.io/archive/img/3.3.jpg">
+                    <div class="description">Persona de vista des de radera amb gorro</div>
+                </div>
+                <div class="arrow next counter-plus" onclick="plusSlides(1)">&#x3e;</div>
+            </div>
+
+        </div>
+
+
+        <script>   
+        
+
+            // script2: Image gallery 1  
+            var slideIndex = 1;
+            showSlides(slideIndex);
+    
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+    
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+    
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("containerimage");
+                var dots = document.getElementsByClassName("arrow");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "flex";  
+                dots[slideIndex-1].className += "active";
+            }
+
+            // script2: Image gallery 2     
+            var slideIndex = 1;
+            showSlides(slideIndex);
+    
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+    
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+    
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("containerimage2");
+                var dots = document.getElementsByClassName("arrow");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "flex";  
+                dots[slideIndex-1].className += "active";
+            }
+
+
+            // script2: Image gallery 2     
+            var slideIndex = 1;
+            showSlides(slideIndex);
+    
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+    
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+    
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("containerimage3");
+                var dots = document.getElementsByClassName("arrow");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "flex";  
+                dots[slideIndex-1].className += "active";
+            }
+            
+            // const button = document.querySelector('arrow');
+
+            // button.addEventListener('click', event => {
+            // button.textContent = `Click count: ${event.detail}`;
+            // });
+        
+            // script 3: Counter
+            document.getElementById("counter1").innerHTML =  document.getElementsByClassName("arrow").length % document.getElementsByClassName("slides1").length  +"/"+ document.getElementsByClassName("slides1").length;
+            // script 3: Counter
+            document.getElementById("counter2").innerHTML = document.getElementsByClassName("slides2").length +"/"+ document.getElementsByClassName("slides2").length;
+            // script 3: Counter
+            document.getElementById("counter3").innerHTML = document.getElementsByClassName("slides3").length +"/"+ document.getElementsByClassName("slides3").length;
+        </script>
+    </body>
+</html>
