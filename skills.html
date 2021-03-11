@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <head>
@@ -355,4 +356,363 @@
             document.getElementById("counter3").innerHTML = document.getElementsByClassName("slides3").length +"/"+ document.getElementsByClassName("slides3").length;
         </script>
     </body>
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>prova carcassa</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Marina Baro - Skills</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        body{
+            font-family: 'Space Mono', monospace;
+            color: #111E6C;
+            display: flex;
+            flex-direction: row;
+            flex-flow: space-between;
+            align-items: flex-end;
+        }
+        /* font size */
+        h2{
+        font-size: 1.2rem;
+        line-height: auto;
+        font-weight: 100;
+        margin: 0px;
+        padding: 0px;
+        padding-left: 2rem;  
+        }
+        ul{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        li {
+            font-size: .9rem;
+            line-height: auto;
+            font-weight: 100;
+            margin: 0px;
+            padding: 0px;
+            padding-left: 3rem;
+        }
+    
+        .bold{
+            font-weight: 700;
+        }
+        .vertical{
+            writing-mode: vertical-rl;
+        }
+        /* button */
+        button{
+            border: none;
+            border-radius: 50%;
+            display: inline-block;
+            padding: 5px 16px 10px 16px;
+            overflow: hidden;
+            
+            background-color: #4e8d7c;
+           
+            cursor: pointer;
+            white-space: nowrap;
+            font-size: 25px;
+            line-height: 1.5;
+        }
+        button:hover{
+            background-color: #045762;
+        }
+        #containermenu{
+            background-color: #4e8d7c;;
+            height: 98vh;
+            width: 2%;
+            display: flex;
+            flex-direction: row;
+            overflow: scroll;
+        }
+    
+        #container1{
+            background-color:#f3f2da;
+            height: 98vh;
+            width: 90%;
+            overflow: scroll;
+        }
+        #container2{
+            background-color:#4e8d7c;
+            height: 98vh;
+            width: 100%;
+            display: none;
+            flex-direction: column;
+        }
+        #container3{
+            background-color:#045762;
+            height: 98vh;
+            width: 100%;
+            display: none;
+            flex-direction: column;
+        }
+        #container4{
+            background-color:#e6acbb;
+            height: 98vh;
+            width: 100%;
+            display: none;
+            flex-direction: column;
+        }
+        .containertop{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;  
+        }
+        .counter{
+            padding: 1rem;
+            margin: 1.5rem;
+            font-size: large;
+        }
+        .closebtn{
+            padding: 1rem;
+            margin: 1.5rem;
+            font-size: xx-large;
+            text-decoration: none;
+        }
+        .containerfigure{
+            display: flex;
+            flex-direction: row; 
+            align-items: center;
+            text-align: center;
+            height: 98vh;
+        }
+        .arrow{
+            padding: 1rem;
+            margin: 1.5rem;
+            font-size: xx-large;
+            padding-top: 50%;
+            padding-bottom: 50%;
+        }
+        .containerimage{
+            display: none;
+            flex-direction: column; 
+            align-items: center;
+        }
+        .containerimage2{
+            display: none;
+            flex-direction: column; 
+            align-items: center;
+        }
+        .containerimage3{
+            display: none;
+            flex-direction: column; 
+            align-items: center;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+            
+        }
+        .description{
+          height: 5rem;
+          padding: auto;
+        }
+
+    </style>
+    <body>
+        <script>
+            
+            //script 1
+            /* WHEN page loaded ALL CONTAINERS Display none */
+            window.onload = function CloseAll(){
+            document.getElementById("container2").style.display = "none";
+            document.getElementById("container3").style.display = "none";
+            document.getElementById("container4").style.display = "none";
+            }
+             
+            //script2
+            // Container2
+            /* Display flex */
+            function openCont2() {
+            document.getElementById("container2").style.display = "flex";
+            }
+            /* Display none */
+            function closeCont2() {
+            document.getElementById("container2").style.display = "none";
+            } 
+
+            // Container3
+             /* Display flex */
+            function openCont3() {
+            document.getElementById("container3").style.display = "flex";
+            }
+            /* Display none */
+            function closeCont3() {
+            document.getElementById("container3").style.display = "none";
+            } 
+
+            // Container4  
+            /* Display flex */
+            function openCont4() {
+            document.getElementById("container4").style.display = "flex";
+            }
+            /* Display none */
+            function closeCont4() {
+            document.getElementById("container4").style.display = "none";
+            } 
+
+        </script>
+            <nav class="containermenu">
+                <ul>
+                    <li class="petit vertical"><a href="">------------cv</a></li>
+                    <br>
+                    <li class="petit vertical"><a href="">--------skills</a></li>
+                    <br>
+                    <li class="petit vertical"><a href="">--------contact</a></li>
+                </ul>
+            </nav>
+           
+            <div id='container1'>
+                <div class="event">
+                    <h2><b class="bold">IDIOMES:</b></h2>
+                    <ul>
+                        <li>Català</li>
+                        <li><a href="https://marinabaro.github.io/archive/index-es.html">Castellà</a></li>
+                        <li><a href="https://marinabaro.github.io/archive/index-en.html">Anglès</a></li>
+                        <li>Italià</li>
+                    </ul>
+                </div>
+        
+                <div class="event">
+                    <h2><b class="bold">EINES:</b></h2>
+                    <ul>
+                      <li>Autocad/BricsCAD</li>
+                      <li>Sketchup</li>
+                      <li>Twinmotion</li>
+                      <li>Microsoft Office/Libre Office</li>
+                      <li>InDesign/Scribus</li>
+                      <li>Photoshop/Gymp</li>
+                      <li>Revit/Archicad</li>
+                      <li>Rhino</li>
+                      <li>V-Ray</li>
+                      <li>CE3x</li>
+                      <li>CYPEcad MEP</li>     
+                      <li>DIALux</li>
+                      <li>Procreate</li>
+                    </ul>
+                </div>
+        
+                <div class="event">
+                    <h2><b class="bold">LLENGUATGES DE PROGRAMACIÓ:</b></h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+            </div>
+    
+
+        <script>   
+        
+
+            // script2: Image gallery 1  
+            var slideIndex = 1;
+            showSlides(slideIndex);
+    
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+    
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+    
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("containerimage");
+                var dots = document.getElementsByClassName("arrow");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "flex";  
+                dots[slideIndex-1].className += "active";
+            }
+
+            // script2: Image gallery 2     
+            var slideIndex = 1;
+            showSlides(slideIndex);
+    
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+    
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+    
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("containerimage2");
+                var dots = document.getElementsByClassName("arrow");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "flex";  
+                dots[slideIndex-1].className += "active";
+            }
+
+
+            // script2: Image gallery 2     
+            var slideIndex = 1;
+            showSlides(slideIndex);
+    
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+    
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+    
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("containerimage3");
+                var dots = document.getElementsByClassName("arrow");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "flex";  
+                dots[slideIndex-1].className += "active";
+            }
+            
+            // const button = document.querySelector('arrow');
+
+            // button.addEventListener('click', event => {
+            // button.textContent = `Click count: ${event.detail}`;
+            // });
+        
+            // script 3: Counter
+            document.getElementById("counter1").innerHTML =  document.getElementsByClassName("arrow").length % document.getElementsByClassName("slides1").length  +"/"+ document.getElementsByClassName("slides1").length;
+            // script 3: Counter
+            document.getElementById("counter2").innerHTML = document.getElementsByClassName("slides2").length +"/"+ document.getElementsByClassName("slides2").length;
+            // script 3: Counter
+            document.getElementById("counter3").innerHTML = document.getElementsByClassName("slides3").length +"/"+ document.getElementsByClassName("slides3").length;
+        </script>
+    </body>
+>>>>>>> 084b31a026ae64e41d044919a80d834d1504ee6d
 </html>
