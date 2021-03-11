@@ -160,170 +160,22 @@
 
     </style>
     <body>
-        <script>
-            
-            //script 1
-            /* WHEN page loaded ALL CONTAINERS Display none */
-            window.onload = function CloseAll(){
-            document.getElementById("container2").style.display = "none";
-            document.getElementById("container3").style.display = "none";
-            document.getElementById("container4").style.display = "none";
-            }
-             
-            //script2
-            // Container2
-            /* Display flex */
-            function openCont2() {
-            document.getElementById("container2").style.display = "flex";
-            }
-            /* Display none */
-            function closeCont2() {
-            document.getElementById("container2").style.display = "none";
-            } 
-
-            // Container3
-             /* Display flex */
-            function openCont3() {
-            document.getElementById("container3").style.display = "flex";
-            }
-            /* Display none */
-            function closeCont3() {
-            document.getElementById("container3").style.display = "none";
-            } 
-
-            // Container4  
-            /* Display flex */
-            function openCont4() {
-            document.getElementById("container4").style.display = "flex";
-            }
-            /* Display none */
-            function closeCont4() {
-            document.getElementById("container4").style.display = "none";
-            } 
-
-        </script>
-      <nav class="containermenu">
-        <ul>
-            <li class="petit vertical"><a href="https://marinabaro.github.io/archive/cv.html">------------cv</a></li>
-            <br>
-            <li class="petit vertical"><a href="https://marinabaro.github.io/archive/skills.html">--------skills</a></li>
-            <br>
-            <li class="petit vertical"><a href="https://marinabaro.github.io/archive/contacte.html">--------contacte</a></li>
-        </ul>
-    </nav>
-           
-            <div id="container1">
-                <div class="event">
-                    <h2><b class="bold">Contacte:</b></h2>
-                    <ul>
-                        <li>marina.baro{at}gmail.com</li>
-                    </ul>
-                </div>
+        <nav class="containermenu">
+            <ul>
+                <li class="petit vertical"><a href="https://marinabaro.github.io/archive/cv.html">------------cv</a></li>
+                <br>
+                <li class="petit vertical"><a href="https://marinabaro.github.io/archive/skills.html">--------skills</a></li>
+                <br>
+                <li class="petit vertical"><a href="https://marinabaro.github.io/archive/contacte.html">--------contacte</a></li>
+            </ul>
+        </nav>
+        <div id="container1">
+            <div class="event">
+                <h2><b class="bold">Contacte:</b></h2>
+                <ul>
+                    <li>marina.baro{at}gmail.com</li>
+                </ul>
             </div>
-        
-               
-    
-
-        <script>   
-        
-
-            // script2: Image gallery 1  
-            var slideIndex = 1;
-            showSlides(slideIndex);
-    
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-    
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-    
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("containerimage");
-                var dots = document.getElementsByClassName("arrow");
-                if (n > slides.length) {slideIndex = 1}    
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "flex";  
-                dots[slideIndex-1].className += "active";
-            }
-
-            // script2: Image gallery 2     
-            var slideIndex = 1;
-            showSlides(slideIndex);
-    
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-    
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-    
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("containerimage2");
-                var dots = document.getElementsByClassName("arrow");
-                if (n > slides.length) {slideIndex = 1}    
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "flex";  
-                dots[slideIndex-1].className += "active";
-            }
-
-
-            // script2: Image gallery 2     
-            var slideIndex = 1;
-            showSlides(slideIndex);
-    
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-    
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-    
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("containerimage3");
-                var dots = document.getElementsByClassName("arrow");
-                if (n > slides.length) {slideIndex = 1}    
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "flex";  
-                dots[slideIndex-1].className += "active";
-            }
-            
-            // const button = document.querySelector('arrow');
-
-            // button.addEventListener('click', event => {
-            // button.textContent = `Click count: ${event.detail}`;
-            // });
-        
-            // script 3: Counter
-            document.getElementById("counter1").innerHTML =  document.getElementsByClassName("arrow").length % document.getElementsByClassName("slides1").length  +"/"+ document.getElementsByClassName("slides1").length;
-            // script 3: Counter
-            document.getElementById("counter2").innerHTML = document.getElementsByClassName("slides2").length +"/"+ document.getElementsByClassName("slides2").length;
-            // script 3: Counter
-            document.getElementById("counter3").innerHTML = document.getElementsByClassName("slides3").length +"/"+ document.getElementsByClassName("slides3").length;
-        </script>
+        </div>
     </body>
 </html>
