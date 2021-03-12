@@ -10,7 +10,6 @@
         <link rel="stylesheet" type="text/css" href="https://marinabaro.github.io/archive/style-v2.css">  
     </head>
     <body>
-  
         <nav class="containermenu">
             <a class="vertical line" href="https://marinabaro.github.io/archive/cv.html">------------cv</a>
             <a class="vertical" href="https://marinabaro.github.io/archive/skills.html">--------skills</a>
@@ -168,8 +167,6 @@
         </div>
 
         <script>   
-        
-
             // script2: Image gallery 1  
             var slideIndex = 1;
             showSlides(slideIndex);
@@ -198,62 +195,7 @@
                 dots[slideIndex-1].className += "active";
             }
 
-            // script2: Image gallery 2     
-            var slideIndex = 1;
-            showSlides(slideIndex);
-    
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-    
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-    
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("containerimage2");
-                var dots = document.getElementsByClassName("arrow");
-                if (n > slides.length) {slideIndex = 1}    
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "flex";  
-                dots[slideIndex-1].className += "active";
-            }
-
-
-            // script2: Image gallery 2     
-            var slideIndex = 1;
-            showSlides(slideIndex);
-    
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-    
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-    
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("containerimage3");
-                var dots = document.getElementsByClassName("arrow");
-                if (n > slides.length) {slideIndex = 1}    
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "flex";  
-                dots[slideIndex-1].className += "active";
-            }
+          
             
             // const button = document.querySelector('arrow');
 
@@ -263,10 +205,7 @@
         
             // script 3: Counter
             document.getElementById("counter1").innerHTML =  document.getElementsByClassName("arrow").length % document.getElementsByClassName("slides1").length  +"/"+ document.getElementsByClassName("slides1").length;
-            // script 3: Counter
-            document.getElementById("counter2").innerHTML = document.getElementsByClassName("slides2").length +"/"+ document.getElementsByClassName("slides2").length;
-            // script 3: Counter
-            document.getElementById("counter3").innerHTML = document.getElementsByClassName("slides3").length +"/"+ document.getElementsByClassName("slides3").length;
+           
         </script>
     </body>
 </html>
