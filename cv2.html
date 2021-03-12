@@ -184,24 +184,8 @@
     <body>
         <script>
             
-            //script 1
-            /* WHEN page loaded ALL CONTAINERS Display none */
-            window.onload = function CloseAll(){
-            document.getElementById("container2").style.display = "none";
-            document.getElementById("container3").style.display = "none";
-            document.getElementById("container4").style.display = "none";
-            }
+           
              
-            //script2
-            // Container2
-            /* Display flex */
-            function openCont2() {
-            document.getElementById("container2").style.display = "flex";
-            }
-            /* Display none */
-            function closeCont2() {
-            document.getElementById("container2").style.display = "none";
-            } 
 
             // Container3
              /* Display flex */
@@ -390,34 +374,7 @@
         <script>   
         
 
-            // script2: Image gallery 1  
-            var slideIndex = 1;
-            showSlides(slideIndex);
-    
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-    
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-    
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("containerimage");
-                var dots = document.getElementsByClassName("arrow");
-                if (n > slides.length) {slideIndex = 1}    
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "flex";  
-                dots[slideIndex-1].className += "active";
-            }
-
+            
             // script2: Image gallery 2     
             var slideIndex = 1;
             showSlides(slideIndex);
