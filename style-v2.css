@@ -3,7 +3,9 @@
         color: #111E6C;
         display: flex;
         flex-direction: row;
-        margin-top: 20px;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     /* font size */
     h2{
@@ -72,6 +74,7 @@
         padding-left: 32px;
     }
     #container2{
+        background-color: rgba(243, 242, 218, 0.733);
         height: 98vh;
         width: 100%;
         display: flex;
