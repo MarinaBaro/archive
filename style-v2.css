@@ -1,11 +1,9 @@
-
     body{
         font-family: 'Space Mono', monospace;
         color: #111E6C;
         display: flex;
         flex-direction: row;
         margin-top: 20px;
-
     }
     /* font size */
     h2{
@@ -129,7 +127,6 @@
         max-width: 100%;
         max-height: 100%;
         margin: auto;
-        
     }
     .description{
       height: 5rem;
