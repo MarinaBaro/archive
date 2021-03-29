@@ -113,19 +113,16 @@
         position:absolute;
         z-index: 1;
     }
-    .{
+    .scroll{
         display: flex;
-      
+        justify-content:space-between;      
     }
     .arrow{
         padding: 1rem;
-        margin: 1.5rem;
         font-size: xx-large;
         padding-top: 50%;
         padding-bottom: 50%;
-        width: 50%;
         cursor: crosshair;
-        height: 100%;
     }
     .next{
         position: relative;
