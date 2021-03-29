@@ -110,12 +110,12 @@
         z-index: 20;
     }
     .positionbottom{
-        position:static;
+        position:absolute;
         z-index: 1;
     }
     .scroll{
-        position:static;
-        z-index: 20;
+        display: flex;
+      
     }
     .arrow{
         padding: 1rem;
