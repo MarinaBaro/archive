@@ -104,6 +104,15 @@
         text-align: center;
         height: 98vh;
     }
+
+    .positiontop{
+        position:static;
+        z-index: 20;
+    }
+    .positionbottom{
+        position:static;
+        z-index: 1;
+    }
     .scroll{
         position:static;
         z-index: 20;
@@ -114,7 +123,6 @@
         font-size: xx-large;
         padding-top: 50%;
         padding-bottom: 50%;
-        z-index: 2;
         width: 50%;
         cursor: crosshair;
         height: 100%;
