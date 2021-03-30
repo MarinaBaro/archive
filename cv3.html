@@ -139,7 +139,7 @@
             </div>
         </div>
         <script>   
-            // script2: Image gallery 2     
+            // script2: Image gallery 3     
             var slideIndex = 1;
             showSlides(slideIndex);
     
@@ -164,11 +164,11 @@
                     dots[i].className = dots[i].className.replace(" active", "");
                 }
                 slides[slideIndex-1].style.display = "flex";  
-                dots[slideIndex-1].className += "active";
+                //dots[slideIndex-1].className += "active";
+                    
+                // script 3: Counter
+                document.getElementById("counter3").innerHTML =  slideIndex +"/"+ document.getElementsByClassName("slides3").length;
             }
-     
-            // script 3: Counter
-            document.getElementById("counter3").innerHTML = document.getElementsByClassName("slides3").length +"/"+ document.getElementsByClassName("slides3").length;
         </script>
     </body>
 </html>

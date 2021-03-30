@@ -164,11 +164,11 @@
                     dots[i].className = dots[i].className.replace(" active", "");
                 }
                 slides[slideIndex-1].style.display = "flex";  
-                dots[slideIndex-1].className += "active";
+                //dots[slideIndex-1].className += "active";
+                    
+                // script 3: Counter
+                document.getElementById("counter2").innerHTML =  slideIndex +"/"+ document.getElementsByClassName("slides2").length;
             }
-
-            // script 3: Counter
-            document.getElementById("counter2").innerHTML = document.getElementsByClassName("slides2").length +"/"+ document.getElementsByClassName("slides2").length;
          </script>
     </body>
 </html>
