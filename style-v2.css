@@ -108,10 +108,12 @@
     .positiontop{
         position:static;
         z-index: 20;
+        height: 100%;
     }
     .positionbottom{
         position:absolute;
         z-index: 1;
+        height: 100%;
     }
     .scroll{
         display: flex;
@@ -123,8 +125,13 @@
         padding-top: 50%;
         padding-bottom: 50%;
         cursor: crosshair;
+        height: 100%;
+    }
+    .previous{
+        padding-right: 50%;
     }
     .next{
+        padding-left: 50%;
         position: relative;
         float:right;
     }
