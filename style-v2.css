@@ -128,10 +128,10 @@
         height: 100%;
     }
     .previous{
-        padding-right: 50%;
+        padding-right: 45%;
     }
     .next{
-        padding-left: 50%;
+        padding-left: 45%;
         position: relative;
         float:right;
     }
