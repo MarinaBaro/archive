@@ -108,9 +108,8 @@
     .positiontop{
         position:absolute;
         z-index: 20;
-        padding-top: 70%;
-        padding-bottom: 70%;
-        width: 170%;
+        padding-top: 50%;
+        width: 100%;
     }
     .positionbottom{
 
