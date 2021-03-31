@@ -3,9 +3,10 @@
         color: #111E6C;
         display: flex;
         flex-direction: row;
-        padding-top: 1.5rem;
+        height: 97vh;
+        /* padding-top: 1.5rem;
         padding-left: 20px;
-        padding-right: 20px;
+        padding-right: 20px; */
     }
     /* font size */
     h2{
@@ -60,14 +61,14 @@
         display: none;
     }
     .containermenu{
-        height: 98vh;
+        /* height: 98vh; */
         width: auto;
         display: flex;
         flex-direction: column;
     }
     #container1{
         background-color: rgba(243, 242, 218, 0.596);
-        height: 98vh;
+        /* height: 98vh; */
         width: 100%;
         overflow-y: scroll;
         text-decoration: none;
@@ -75,7 +76,7 @@
     }
     #container2{
         background-color: rgba(243, 242, 218, 0.733);
-        height: 98vh;
+        /* height: 98vh; */
         width: 100%;
         display: flex;
         flex-direction: column;
