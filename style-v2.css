@@ -103,7 +103,7 @@
         height: 98vh;
     }
     .mainslide{
-        position: absolute;
+        position: relative;
     }
     .positiontop{
         position:absolute;
