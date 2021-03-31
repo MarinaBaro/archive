@@ -103,17 +103,17 @@
         height: 98vh;
     }
     .mainslide{
-        position: relative;
+        position: absolute;
     }
     .positiontop{
-        position:static;
+        position:absolute;
         z-index: 20;
-        height: 100%;
+        padding-top: 70%;
+        padding-bottom: 70%;
+        width: 170%;
     }
     .positionbottom{
-        position:absolute;
-        z-index: 1;
-        height: 100%;
+
     }
     .scroll{
         display: flex;
