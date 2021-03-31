@@ -71,9 +71,11 @@
         background-color: rgba(243, 242, 218, 0.596);
         /* height: 98vh; */
         width: 100%;
-        overflow-y: scroll;
         text-decoration: none;
         padding-left: 32px;
+        overflow-y: scroll;
+        scrollbar-color: rebeccapurple green;
+        scrollbar-width: thin;
     }
     #container2{
         background-color: rgba(243, 242, 218, 0.733);
@@ -159,7 +161,5 @@
     }
     .description{
       height: 5rem;
-      padding: auto;
-      align-self:flex-end;
     }
 
