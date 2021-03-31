@@ -4,8 +4,8 @@
         display: flex;
         flex-direction: row;
         height: 97vh;
-        /* padding-top: 1.5rem;
-        padding-left: 20px;
+        padding-top: 1.5rem;
+        /*padding-left: 20px;
         padding-right: 20px; */
     }
     /* font size */
@@ -51,17 +51,18 @@
     }
     .vertical:hover{
         color: #111E6C;
-        text-decoration: line-through;
+        text-decoration: underline;
     }
     .vertical:active{
         color: #111E6C;
         font-weight: 700;
+        text-decoration: line-through;
     }
     .invisible-scrollbar::-webkit-scrollbar {
         display: none;
     }
     .containermenu{
-        /* height: 98vh; */
+       
         width: auto;
         display: flex;
         flex-direction: column;
