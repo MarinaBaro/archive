@@ -88,13 +88,11 @@
     }
     .counter{
         padding: 1rem;
-        margin: 1.5rem;
         font-size: large;
     }
     .closebtn{
         padding: 1rem;
-        margin: 1.5rem;
-        font-size: xx-large;
+        font-size: large;
         text-decoration: none;
     }
     .containerfigure{
