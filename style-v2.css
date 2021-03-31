@@ -132,11 +132,19 @@
     }
     .previous{
         padding-right: 45%;
+        cursor:url('path-to-image.png'), auto;
+        font-size: 1rem;
+        /* &#x3c; */
+
     }
     .next{
         padding-left: 45%;
         position: relative;
         float:right;
+
+        cursor:url('path-to-image.png'), auto;
+
+        &#x3e;
     }
 
     .containerimage{
