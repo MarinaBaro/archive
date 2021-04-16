@@ -81,8 +81,8 @@
         background-color: rgba(243, 242, 218, 0.733);
         /* height: 98vh; */
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
     }
     .containertop{
         display: flex;
